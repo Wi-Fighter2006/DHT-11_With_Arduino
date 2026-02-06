@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <DHT.h>
 
-#define DHTPIN 2        // ❗ no semicolon
+#define DHTPIN 2
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -28,7 +28,7 @@ void loop() {
     Serial.print(" %\t");
     Serial.print("Temperature: ");
     Serial.print(t);
-    Serial.println(" *C");
+    Serial.println("°C");
 
     delay(2000);
 }
